@@ -1,18 +1,26 @@
 /** @jsx h */
 
-import blog, { ga, redirects, h } from "blog";
+import blog, {ga, redirects, h} from "blog";
 
 blog({
-  title: "My Blog",
-  description: "This is my new blog.",
-  // header: <header>Your custom header</header>,
-  // section: <section>Your custom section</section>,
-  // footer: <footer>Your custom footer</footer>,
-  avatar: "https://deno-avatar.deno.dev/avatar/blog.svg",
-  avatarClass: "rounded-full",
-  author: "An author",
+    title: "Ryosuke's blog",
+    description: "This is my blog.",
+    // header: <header>Your custom header</header>,
+    // section: <section>Your custom section</section>,
+    // footer: <footer>Your custom footer</footer>,
+    avatar: "avatar.jpg",
+    avatarClass: "rounded-full",
+    author: "Ryosuke Uchitate",
+    links: [
+        {title: "GitHub", url: "https://github.com/b1a9id"},
+        {title: "Twitter", url: "https://twitter.com/b1a9idps"},
+        {title: "SlideShare", url: "https://www.slideshare.net/RyosukeUchitate"},
+    ],
+    lang: "ja",
+    dateStyle: "long",
+    favicon: "favicon.ico"
 
-  // middlewares: [
+    // middlewares: [
 
     // If you want to set up Google Analytics, paste your GA key here.
     // ga("UA-XXXXXXXX-X"),
@@ -23,5 +31,5 @@ blog({
     //  "/hello_world.html": "/hello_world",
     // }),
 
-  // ]
+    // ]
 });
