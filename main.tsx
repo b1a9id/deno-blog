@@ -18,7 +18,7 @@ blog({
     ],
     lang: "ja",
     dateStyle: "long",
-    favicon: "favicon.ico",
+    theme: "auto",
 
     middlewares: [
 
