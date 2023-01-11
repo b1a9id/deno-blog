@@ -18,18 +18,20 @@ blog({
     ],
     lang: "ja",
     dateStyle: "long",
-    favicon: "favicon.ico"
+    favicon: "favicon.ico",
 
-    // middlewares: [
+    middlewares: [
 
     // If you want to set up Google Analytics, paste your GA key here.
     // ga("UA-XXXXXXXX-X"),
 
     // If you want to provide some redirections, you can specify them here,
     // pathname specified in a key will redirect to pathname in the value.
-    // redirects({
-    //  "/hello_world.html": "/hello_world",
-    // }),
+    redirects({
+        // 初めてのTech DayでConcourse CIに入門した
+        "/posts/tech-day-concourse-ci": "/2019/01/12/1547254800",
+        "/posts/tech-day-concourse-ci/": "/2019/01/12/1547254800",
+    }),
 
-    // ]
+    ]
 });
